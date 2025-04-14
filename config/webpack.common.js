@@ -17,18 +17,4 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: path.resolve(__dirname, '../public/_redirects'),
-          to: path.resolve(__dirname, '../dist'), // ou 'build', depende do seu output final
-        },
-        {
-          from: path.resolve(__dirname, '../public/_headers'),
-          to: path.resolve(__dirname, '../dist'),
-        },
-      ],
-    }),
-  ],
 };
